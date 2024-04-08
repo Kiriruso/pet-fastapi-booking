@@ -1,0 +1,13 @@
+[tool.ruff]
+target-version = "py311"
+line-length = 88
+indent-width = 4
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.pyright]
+include = ["app"]
+pythonVersion = "3.11"
+pythonPlatform = "Windows"

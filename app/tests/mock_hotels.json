@@ -1,0 +1,49 @@
+[
+  {
+    "name": "test_hotel_1",
+    "location": "Moscow, st. Sinichkina 1",
+    "services": {
+      "spa": true,
+      "pool": true
+    },
+    "rooms_quantity": 5,
+    "image_id": 1
+  },
+  {
+    "name": "test_hotel_2",
+    "location": "Saint Petersburg, st. Nevsky 10",
+    "services": {
+      "spa": false,
+      "pool": true
+    },
+    "rooms_quantity": 10,
+    "image_id": 2
+  },
+  {
+    "name": "test_hotel_3",
+    "location": "Kazan, st. Bauman 7",
+    "services": {
+      "spa": true,
+      "pool": false
+    },
+    "rooms_quantity": 15,
+    "image_id": 3
+  },
+  {
+    "name": "test_hotel_4",
+    "location": "Nizhny Novgorod, st. Bolshaya Pokrovskaya 12",
+    "services": null,
+    "rooms_quantity": 20,
+    "image_id": 4
+  },
+  {
+    "name": "test_hotel_5",
+    "location": "Sochi, st. Vinogradnaya 32",
+    "services": {
+      "spa": true,
+      "pool": true
+    },
+    "rooms_quantity": 25,
+    "image_id": 5
+  }
+]

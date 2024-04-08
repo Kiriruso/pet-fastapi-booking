@@ -1,0 +1,8 @@
+name location services rooms_quantity image_id
+Redison |Moscow, st. Sinichka 1| |{"spa": true, "food": true}| 10 1
+Blue |St. Petersburg, st. Bolshaya 32| null 5 2
+GreenPark |Kazan, st. Universitetskaya 15| |{"pool": true, "gym": true}| 15 3
+YellowStar |Nizhny Novgorod, st. Minina 24| |{"wifi": true, "parking": true}| 8 4
+PurpleHaze |Vladivostok, st. Svetlanskaya 77| null 7 5
+OrangeSun |Sochi, st. Kurortny Prospekt 100| |{"beach": true, "restaurant": true}| 20 6
+BlackPearl |Yekaterinburg, st. Malysheva 62| |{"bar": true, "gym": true}| 12 7

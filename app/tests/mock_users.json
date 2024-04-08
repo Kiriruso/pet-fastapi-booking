@@ -1,0 +1,22 @@
+[
+  {
+    "email": "test_1@test.com",
+    "password": "qwerty_1"
+  },
+  {
+    "email": "test_2@test.com",
+    "password": "qwerty_2"
+  },
+  {
+    "email": "test_3@test.com",
+    "password": "qwerty_3"
+  },
+  {
+    "email": "test_4@test.com",
+    "password": "qwerty_4"
+  },
+  {
+    "email": "test_5@test.com",
+    "password": "qwerty_5"
+  }
+]

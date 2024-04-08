@@ -1,0 +1,137 @@
+[
+  {
+    "hotel_id": 1,
+    "name": "Large room for two for a romantic evening",
+    "description": null,
+    "price": 200,
+    "services": {
+      "large": true,
+      "breakfast": true,
+      "bathroom": false,
+      "tv": false
+    },
+    "quantity": 2,
+    "image_id": 6
+  },
+  {
+    "hotel_id": 1,
+    "name": "Cozy room for a family of four",
+    "description": "A spacious room with two double beds and a view of the city",
+    "price": 350,
+    "services": {
+      "large": true,
+      "breakfast": true,
+      "bathroom": true,
+      "tv": true
+    },
+    "quantity": 3,
+    "image_id": 7
+  },
+  {
+    "hotel_id": 2,
+    "name": "Single room with a view of the park",
+    "description": null,
+    "price": 150,
+    "services": {
+      "large": false,
+      "breakfast": false,
+      "bathroom": true,
+      "tv": true
+    },
+    "quantity": 5,
+    "image_id": 8
+  },
+  {
+    "hotel_id": 3,
+    "name": "Luxury suite with a jacuzzi",
+    "description": "A luxurious suite with a king-size bed, a jacuzzi and a view of the river",
+    "price": 900,
+    "services": {
+      "large": true,
+      "breakfast": true,
+      "bathroom": true,
+      "tv": true
+    },
+    "quantity": 1,
+    "image_id": 9
+  },
+  {
+    "hotel_id": 4,
+    "name": "Standard room for two",
+    "description": "A standard room with a double bed and a view of the courtyard",
+    "price": 250,
+    "services": null,
+    "quantity": 10,
+    "image_id": 10
+  },
+  {
+    "hotel_id": 5,
+    "name": "Deluxe room with a balcony",
+    "description": "A spacious room with a king-size bed, a balcony and a view of the city",
+    "price": 600,
+    "services": {
+      "large": true,
+      "breakfast": true,
+      "bathroom": true,
+      "tv": true
+    },
+    "quantity": 2,
+    "image_id": 11
+  },
+  {
+    "hotel_id": 1,
+    "name": "Economy room for one",
+    "description": "A small room with a single bed and a shared bathroom",
+    "price": 100,
+    "services": {
+      "large": false,
+      "breakfast": false,
+      "bathroom": false,
+      "tv": false
+    },
+    "quantity": 10,
+    "image_id": 12
+  },
+  {
+    "hotel_id": 2,
+    "name": "Superior room with a city view",
+    "description": "A spacious room with a queen-size bed and a view of the city",
+    "price": 400,
+    "services": {
+      "large": true,
+      "breakfast": true,
+      "bathroom": true,
+      "tv": true
+    },
+    "quantity": 4,
+    "image_id": 13
+  },
+  {
+    "hotel_id": 3,
+    "name": "Standard room with a park view",
+    "description": "A standard room with a double bed and a view of the park",
+    "price": 300,
+    "services": {
+      "large": false,
+      "breakfast": true,
+      "bathroom": true,
+      "tv": true
+    },
+    "quantity": 8,
+    "image_id": 14
+  },
+  {
+    "hotel_id": 4,
+    "name": "Deluxe room with a river view",
+    "description": "A spacious room with a king-size bed and a view of the river",
+    "price": 700,
+    "services": {
+      "large": true,
+      "breakfast": true,
+      "bathroom": true,
+      "tv": true
+    },
+    "quantity": 3,
+    "image_id": 15
+  }
+]

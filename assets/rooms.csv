@@ -1,0 +1,11 @@
+hotel_id name description price services quantity image_id
+3 |Large room| |Spacious rooms with stunning views| 450 |{"breakfast": true, "wifi": true}| 15 11
+7 |Small room| |Modern hotel in the heart of the city| 300 |{"fitness": false, "parking": true}| 20 15
+2 |Middle room| |Cozy hotel near the beach| 250 |{"beach_access": true, "restaurant": true}| 10 9
+5 |Some room| |Luxury hotel with panoramic views| 700 |{"spa": true, "room_service": true}| 5 13
+1 |Large room| |Historic hotel in the city center| 500 |{"bar": true, "concierge": false}| 25 8
+4 |Small room| |Relaxing hotel with a tropical garden| 350 |{"pool": true, "wifi": true}| 12 10
+6 |Some room| |Charming hotel with mountain views| 600 |{"restaurant": true, "room_service": true}| 8 14
+2 |Small room| null 200 null 18 12
+7 |Large room| |Comfortable rooms in the city center| 350 |{"wifi": true, "parking": true}| 22 16
+3 |Middle room| |Beautiful hotel with a rooftop terrace| 500 |{"bar": false, "restaurant": true}| 17 18

@@ -1,0 +1,6 @@
+.idea
+.ruff_cache
+.env
+.env-non-dev
+venv
+folder-utils.py
