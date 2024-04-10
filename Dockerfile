@@ -10,6 +10,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-RUN rm -r ./app/tests/
-
 RUN chmod a+x /booking/docker/*.sh
