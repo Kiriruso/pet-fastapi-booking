@@ -5,82 +5,83 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class AppSettings(BaseSettings):
-    mode: Literal["DEV", "TEST", "PROD"]
-    log_level: Literal["DEBUG", "INFO"]
+    MODE: Literal["DEV", "TEST", "PROD"]
+    LOG_LEVEL: Literal["DEBUG", "INFO"]
+    SENTRY_DSN: str
 
     model_config = SettingsConfigDict(
-        env_file=".env", env_prefix="app_", extra="ignore"
+        env_file=".env", env_prefix="APP_", extra="ignore"
     )
 
 
 class ServiceAuthSettings(BaseSettings):
-    secret_key: str
-    algorithm: str
+    SECRET_KEY: str
+    ALGORITHM: str
 
     model_config = SettingsConfigDict(
-        env_file=".env", env_prefix="auth_", extra="ignore"
+        env_file=".env", env_prefix="AUTH_", extra="ignore"
     )
 
 
 class ServicePostgresSettings(BaseSettings):
-    host: str
-    port: int
-    username: str
-    password: str
-    db_name: str = Field(alias="db_name")
+    HOST: str
+    PORT: int
+    USERNAME: str
+    PASSWORD: str
+    DB_NAME: str = Field(alias="DB_NAME")
 
-    test_host: str
-    test_port: int
-    test_username: str
-    test_password: str
-    test_db_name: str = Field(alias="db_test_name")
+    TEST_HOST: str
+    TEST_PORT: int
+    TEST_USERNAME: str
+    TEST_PASSWORD: str
+    TEST_DB_NAME: str = Field(alias="DB_TEST_NAME")
 
-    model_config = SettingsConfigDict(env_file=".env", env_prefix="db_", extra="ignore")
+    model_config = SettingsConfigDict(env_file=".env", env_prefix="DB_", extra="ignore")
 
     @property
     def postgresql_url(self):
         return (
             f"postgresql+asyncpg"
-            f"://{self.username}"
-            f":{self.password}"
-            f"@{self.host}"
-            f":{self.port}"
-            f"/{self.db_name}"
+            f"://{self.USERNAME}"
+            f":{self.PASSWORD}"
+            f"@{self.HOST}"
+            f":{self.PORT}"
+            f"/{self.DB_NAME}"
         )
 
     @property
     def test_postgresql_url(self):
         return (
             f"postgresql+asyncpg"
-            f"://{self.test_username}"
-            f":{self.test_password}"
-            f"@{self.test_host}"
-            f":{self.test_port}"
-            f"/{self.test_db_name}"
+            f"://{self.TEST_USERNAME}"
+            f":{self.TEST_PASSWORD}"
+            f"@{self.TEST_HOST}"
+            f":{self.TEST_PORT}"
+            f"/{self.TEST_DB_NAME}"
         )
 
 
 class ServiceRedisSettings(BaseSettings):
-    host: str
-    port: int
+    HOST: str
+    PORT: int
 
     model_config = SettingsConfigDict(
-        env_file=".env", env_prefix="redis_", extra="ignore"
+        env_file=".env", env_prefix="REDIS_", extra="ignore"
     )
 
     @property
     def redis_url(self):
-        return f"redis://{self.host}:{self.port}"
+        return f"redis://{self.HOST}:{self.PORT}"
 
 
 class ServiceGoogleSettings(BaseSettings):
-    smtp_host: str
-    smtp_port: int
-    smtp_username: str
-    app_secret: str = Field(alias="google_app_secret")
+    SMTP_HOST: str
+    SMTP_PORT: int
+    SMTP_USERNAME: str
+    APP_SECRET: str = Field(alias="GOOGLE_APP_SECRET")
 
     model_config = SettingsConfigDict(
-        env_file=".env", env_prefix="gmail_", extra="ignore"
+        env_file=".env", env_prefix="GMAIL_", extra="ignore"
     )
 
 

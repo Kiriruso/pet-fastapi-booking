@@ -24,7 +24,7 @@ def get_jwt_token(request: Request):
 async def get_current_user(jwt_token: str = Depends(get_jwt_token)) -> User:
     try:
         payload = jwt.decode(
-            jwt_token, service_auth_settings.secret_key, service_auth_settings.algorithm
+            jwt_token, service_auth_settings.SECRET_KEY, service_auth_settings.ALGORITHM
         )
     except ExpiredSignatureError:
         raise TokenExpiredException()

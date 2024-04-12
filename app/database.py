@@ -4,7 +4,7 @@ from sqlalchemy.orm import DeclarativeBase
 
 from app.settings import app_settings, service_postgres_settings
 
-if app_settings.mode == "TEST":
+if app_settings.MODE == "TEST":
     DATABASE_URL = service_postgres_settings.test_postgresql_url
     DATABASE_ARGS = {"poolclass": NullPool}
 else:

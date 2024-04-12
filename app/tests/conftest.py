@@ -17,7 +17,7 @@ from app.users.models import User
 
 @pytest.fixture(scope="session", autouse=True)
 async def prepare_database():
-    assert app_settings.mode == "TEST"
+    assert app_settings.MODE == "TEST"
 
     async with async_engine.begin() as conn:
         await conn.run_sync(Base.metadata.drop_all)

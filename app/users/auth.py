@@ -23,13 +23,13 @@ def create_access_token(data: dict) -> str:
     expire = datetime.utcnow() + timedelta(minutes=30)
     to_encode.update({"exp": expire})
     jwt_token = jwt.encode(
-        to_encode, service_auth_settings.secret_key, service_auth_settings.algorithm
+        to_encode, service_auth_settings.SECRET_KEY, service_auth_settings.ALGORITHM
     )
     return jwt_token
 
 
 async def authenticate_user(email: EmailStr, password: str):
     user = await UserService.find_one_or_none(email=email)
-    if user is not None and not verify_password(password, user.password):
+    if user is not None and not verify_password(password, user.PASSWORD):
         return None
     return user

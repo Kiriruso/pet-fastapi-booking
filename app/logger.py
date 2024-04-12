@@ -26,4 +26,4 @@ formatter = CustomJsonFormatter('%(timestamp)s %(level)s %(name)s %(message)s')
 
 log_handler.setFormatter(formatter)
 logger.addHandler(log_handler)
-logger.setLevel(app_settings.log_level)
+logger.setLevel(app_settings.LOG_LEVEL)
