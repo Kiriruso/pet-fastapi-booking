@@ -3,5 +3,6 @@ app/tests/
 .ruff_cache
 .idea
 
-pytest.ini
 .gitignore
+pytest.ini
+requirements.txt

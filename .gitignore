@@ -3,4 +3,3 @@
 .env
 .env-non-dev
 pytest.ini
-requirements.txt
