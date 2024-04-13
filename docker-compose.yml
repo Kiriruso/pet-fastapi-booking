@@ -20,7 +20,7 @@ services:
       - .env-non-dev
     command: ["/booking/docker/app.sh"]
     ports:
-      - '9000:8000'
+      - '8000:8000'
     depends_on:
       - db
       - redis

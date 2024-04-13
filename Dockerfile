@@ -19,7 +19,7 @@ WORKDIR /booking
 COPY pyproject.toml .
 COPY poetry.lock .
 
-RUN poetry install --no-dev
+RUN poetry install --without dev
 
 COPY . .
 
