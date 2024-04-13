@@ -3,8 +3,5 @@ app/tests/
 .ruff_cache
 .idea
 
-folder_utils.py
-pyproject.toml
 pytest.ini
 .gitignore
-.env

@@ -30,6 +30,6 @@ def create_access_token(data: dict) -> str:
 
 async def authenticate_user(email: EmailStr, password: str):
     user = await UserService.find_one_or_none(email=email)
-    if user is not None and not verify_password(password, user.PASSWORD):
+    if user is not None and not verify_password(password, user.password):
         return None
     return user

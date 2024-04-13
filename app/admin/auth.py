@@ -1,6 +1,7 @@
 from sqladmin.authentication import AuthenticationBackend
 from starlette.requests import Request
 
+from app.settings import service_auth_settings
 from app.users.auth import authenticate_user, create_access_token
 from app.users.dependencies import get_current_user
 
@@ -36,4 +37,4 @@ class AdminAuth(AuthenticationBackend):
         return True
 
 
-authentication_backend = AdminAuth(secret_key="...")
+authentication_backend = AdminAuth(secret_key=service_auth_settings.SECRET_KEY)

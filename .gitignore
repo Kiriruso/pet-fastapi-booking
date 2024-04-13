@@ -1,5 +1,6 @@
-__pycache__/
+**/__pycache__
 .ruff_cache
 .env
 .env-non-dev
 pytest.ini
+requirements.txt
