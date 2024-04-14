@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "booking"
+name = "app"
 version = "0.1.0"
 description = "Simple hotel booking site"
 authors = ["Sosnovskikh Kirill <sosnovskix.kir2001@gmail.com>"]

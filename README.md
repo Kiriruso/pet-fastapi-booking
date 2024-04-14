@@ -27,10 +27,19 @@
 
 ### Poetry
 
-Для установки потребуется [poetry](https://python-poetry.org/docs/#installing-with-the-official-installer), затем можно запустить следующую команду в директории проекта:
+Для установки потребуется [poetry](https://python-poetry.org/docs/#installing-with-the-official-installer).
+
+Сначала клонируйте проект и перейдите в корневую директорию:
 
 ```bash
-poetry add git+https://github.com/sdispater/pendulum.git --without dev
+git clone https://github.com/Kiriruso/pet-fastapi-booking.git
+cd pet-fastapi-booking
+```
+
+А затем запустите следующий скрипт для установки проекта:
+
+```bash
+poetry install --without dev
 ```
 
 Для разработки замените флаг `--without` на `--with`
@@ -41,14 +50,9 @@ poetry config virtualenvs.in-project = true
 poetry config virtualenvs.path = "{project-dir}\\<your path>"
 ```
 
-Или скачайте проект и в директории запустите следующий скрипт:
-```bash
-poetry install --without dev
-```
-
 ### Pip
 
-Скачайте проект, разверните виртуальное окружение `python -m venv venv` и запустите следующий скрипт:
+Клонируйте проект, разверните виртуальное окружение `python -m venv venv` и запустите следующий скрипт:
 ```bash
 pip install -r requirements.txt
 ```
@@ -112,7 +116,7 @@ docker run -d -p <port>:8000 --name <container name>
 
 >Без поднятия остальных контейнеров эндпоинты работают некорректно.
 
->Порт 8000 &ndash; стандартный для uvicorn, чтобы изменить это в файле `docker/app.sh` замените `--bind=0.0.0.0:8000` на нужно вам значение.  
+>Порт 8000 &ndash; стандартный для uvicorn, чтобы изменить это в файле `docker/app.sh` замените `--bind=0.0.0.0:8000` на нужное вам значение.  
 
 #### Сборка образа без poetry
 
