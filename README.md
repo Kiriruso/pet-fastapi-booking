@@ -109,7 +109,7 @@ docker build -t <image name> .
 
 После сборки можно поднять контейнер:
 ```bash
-docker run -d -p <port>:8000 --name <container name>
+docker run <image name> -d -p <port>:8000 --name <container name>
 ```
 
 Документация будет доступна по ссылке http://localhost:8000/docs.
